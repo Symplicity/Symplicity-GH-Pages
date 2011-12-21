@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title != '' %} {{ page.title }} | {% endif %}{{ site.sitename }}</title>
+  <link rel="stylesheet" href="/assets/css/compiled/master.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="/assets/css/compiled/syntax.css" type="text/css" media="screen">
+</head>
+<body id="{{ page.slug }}">
+  <h1>{{ site.sitename }}</h1>
+  <p>This is the home of {{ site.sitename }}.</p>
+  
+  {{ content }}
+  
+  <!-- footer -->
+  <footer id="footer" role="contentinfo">
+    <p id="copyright"><small>&#169; {{ 'now' | date: "%Y" }} {{ site.sitename }} All rights reserved.</small></p>
+  </footer>
+  <!-- /footer -->
+  
+</body>
+<!-- 
+<@)))>{ WVD }<(((@> 
+-->
+</html>

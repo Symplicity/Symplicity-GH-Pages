@@ -1,0 +1,5 @@
+auto: false
+markdown: rdiscount
+permalink: pretty
+sitename: Symplicity on GitHub
+destination: 'symplicity.github.com'
