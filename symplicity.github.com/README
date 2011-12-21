@@ -1,0 +1,3 @@
+This is the source code used to generate the Jekyll-powered site for our GitHub pages site. 
+Please note that the compiled site resides in a separate repo so that we can easily add
+the proper hooks to serve a GitHub Pages site and also for organizational purposes.
