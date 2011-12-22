@@ -2,4 +2,5 @@ auto: false
 markdown: rdiscount
 permalink: pretty
 sitename: Symplicity on GitHub
+company: Symplicity Corporation
 destination: 'symplicity.github.com'

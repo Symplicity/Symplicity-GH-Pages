@@ -2,23 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{% if page.title != '' %} {{ page.title }} | {% endif %}{{ site.sitename }}</title>
-  <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="/assets/css/compiled/master.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="/assets/css/compiled/syntax.css" type="text/css" media="screen">
+  <title>{% if page.title %} {{ page.title }} | {% endif %}{{ site.sitename }}</title>
+  {% if page.excerpt %}<meta name="description" content="{{ page.excerpt }}">{% endif %}
+  <meta name="author" content="http://symplicity.github.com/humans.txt">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="assets/css/compiled/master.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="assets/css/compiled/syntax.css" type="text/css" media="screen">
 </head>
 <body id="{{ page.slug }}">
-  <h1>{{ site.sitename }}</h1>
-  <p>This is the home of {{ site.sitename }}.</p>
+	<!-- .topbar -->
+	<div class="topbar">
+    <div class="topbar-inner">
+      <div class="container">
+        <h1><a class="brand" href="/">{{ site.sitename }}</a></h1>
+
+        <ul class="nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="http://symplicity.com/about_symplicity">About</a></li>
+          <li><a href="http://symplicity.com/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /.topbar -->
   
-  {{ content }}
-  
-  <!-- footer -->
-  <footer id="footer" role="contentinfo">
-    <p id="copyright"><small>&#169; {{ 'now' | date: "%Y" }} {{ site.sitename }} All rights reserved.</small></p>
-  </footer>
-  <!-- /footer -->
-  
+  <!-- .container-fluid -->
+  <div class="container">
+    
+    <!-- .content -->
+    <div class="content">
+		  
+			{{ content }}
+	
+		  <!-- footer -->
+		  <footer id="footer" role="contentinfo">
+		    <p id="copyright"><small>&#169; {{ 'now' | date: "%Y" }} {{ site.company }} All rights reserved.</small></p>
+		  </footer>
+		  <!-- /footer -->
+		  
+		</div>
+		<!-- /.content -->
+  </div>
+  <!-- /.container-fluid -->
 </body>
 <!-- 
 <@)))>{ WVD }<(((@> 
