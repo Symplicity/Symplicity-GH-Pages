@@ -76,9 +76,24 @@
  background: transparent url('/assets/img/symplicity-logo-sprite.png') no-repeat 0 -40px;
  }
 
+.hero-unit {
+ background-color: #f9b437;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#f9b437), to(#fbe89d));
+ background-image: -webkit-linear-gradient(top, #f9b437, #fbe89d);
+ background-image: -moz-linear-gradient(top, #f9b437, #fbe89d);
+ background-image: -o-linear-gradient(top, #f9b437, #fbe89d);
+ background-image: -ms-linear-gradient(top, #f9b437, #fbe89d);
+ background-image: linear-gradient(top, #f9b437, #fbe89d);
+ filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f9b437', EndColorStr='#fbe89d');
+ }
 .hero-unit h1 {
+ color: @color-black;
  margin-bottom: 0.25em;
+ 	small {
+ 	 color: @color-dark-gray;
+ 	 }
  }
 .hero-unit p {
+ color: @color-black;
  margin-bottom: 1em;
  }

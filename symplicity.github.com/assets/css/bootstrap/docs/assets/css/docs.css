@@ -35,14 +35,14 @@ section > .row {
 .jumbotron h1,
 .jumbotron p {
   margin-bottom: 9px;
-  color: #fff;
+  color: #010004;
   text-align: center;
   text-shadow: 0 1px 1px rgba(0,0,0,.3);
 }
 .jumbotron h1 {
   font-size: 54px;
   line-height: 1;
-  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
 }
 .jumbotron p {
   font-weight: 300;
@@ -52,7 +52,7 @@ section > .row {
   line-height: 27px;
 }
 .jumbotron p a {
-  color: #fff;
+  color: #046D9B;
   font-weight: bold;
 }
 
@@ -60,14 +60,14 @@ section > .row {
 ------------------------- */
 /* main docs page */
 .masthead {
-  background-color: #049cd9;
-  background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#004D9F), to(#049cd9));
-  background-image: -webkit-linear-gradient(#004D9F, #049cd9);
-  background-image: -moz-linear-gradient(#004D9F, #049cd9);
-  background-image: -o-linear-gradient(top, #004D9F, #049cd9);
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#004D9F), to(#049cd9));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#004D9F', endColorstr='#049cd9', GradientType=0); /* IE8 and down */
+  background-color: #f9b437;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f9b437), to(#fbe89d));
+	background-image: -webkit-linear-gradient(top, #f9b437, #fbe89d);
+	background-image: -moz-linear-gradient(top, #f9b437, #fbe89d);
+	background-image: -o-linear-gradient(top, #f9b437, #fbe89d);
+	background-image: -ms-linear-gradient(top, #f9b437, #fbe89d);
+	background-image: linear-gradient(top, #f9b437, #fbe89d);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f9b437', EndColorStr='#fbe89d');
 }
 /* supporting docs pages */
 .subhead {
