@@ -11,23 +11,25 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   
-  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="assets/css/compiled/master.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="assets/css/compiled/syntax.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="/assets/css/compiled/master.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="/assets/css/compiled/syntax.css" type="text/css" media="screen">
 </head>
 <body id="{{ page.slug }}">
 	<!-- .topbar -->
 	<div class="topbar">
     <div class="topbar-inner">
-      <div class="container">
-        <h1><a class="brand" href="/">{{ site.sitename }}</a></h1>
-
-        <ul class="nav">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="http://symplicity.com/about_symplicity">About</a></li>
-          <li><a href="http://symplicity.com/contact">Contact</a></li>
-        </ul>
-      </div>
+      <header class="container">
+        <h1 class="logo"><a class="brand" href="/">{{ site.company }}</a></h1>
+        
+        <nav role="navigation">
+	        <ul class="nav">
+	          <li class="active"><a href="/">Home</a></li>
+	          <li><a href="http://symplicity.com/about_symplicity">About</a></li>
+	          <li><a href="http://symplicity.com/contact">Contact</a></li>
+	        </ul>
+        </nav>
+      </header>
     </div>
   </div>
   <!-- /.topbar -->
